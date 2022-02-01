@@ -7,7 +7,8 @@ import reactor.core.publisher.Mono;
 
 public class CalcuLaterMain {
     public static void main (String[] args) {
-        DiscordClient client1 = DiscordClient.create("AToken");
+        String token = System.getenv("BOTTOKEN");
+        DiscordClient client1 = DiscordClient.create(token);
 
         Mono<Void> login = client1.withGateway((GatewayDiscordClient gateway) ->
                 gateway.on(MessageCreateEvent.class, event -> {
