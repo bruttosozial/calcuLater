@@ -1,2 +1,2 @@
-#calcuLater
-A timezone calculator discord bot
+# calcuLater
+## A timezone calculator discord bot
